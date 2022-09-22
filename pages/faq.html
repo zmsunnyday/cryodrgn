@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>FAQ / Troubleshooting &#8212; CryoDRGN 1.1.1 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Dealing with large datasets" href="large_datasets.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">CryoDRGN 1.1.1 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   ❄️🐉 cryoDRGN Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="installation.html">
+   cryoDRGN Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="empiar_tutorial.html">
+   cryoDRGN EMPIAR-10076 tutorial
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="landscape_analysis.html">
+   cryoDRGN Conformational Landscape Analysis
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="large_datasets.html">
+   Dealing with large datasets
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   FAQ / Troubleshooting
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/pages/faq.md.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>FAQ / Troubleshooting</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="faq-troubleshooting">
+<h1>FAQ / Troubleshooting<a class="headerlink" href="#faq-troubleshooting" title="Permalink to this headline">#</a></h1>
+<ul class="simple">
+<li><p>The expected heterogeneity is not present in the cryoDRGN reconstruction.</p>
+<ul>
+<li><p>There may be too many junk particles or other imaging outliers in your dataset.
+ </p></li>
+</ul>
+</li>
+<li><p>How do I update cryoDRGN versions?</p>
+<ul>
+<li><p>See this section of the installation instructions
+<a class="reference internal" href="installation.html"><span class="doc std std-doc">here</span></a>.</p></li>
+</ul>
+</li>
+<li><p>How can I check on intermediate results during training?</p>
+<ul>
+<li><p>See the run.log that is in the output directory. The <code class="docutils literal notranslate"><span class="pre">cryodrgn</span> <span class="pre">analyze</span></code> command may be run at any time on the
+intermediate epochs.</p></li>
+</ul>
+</li>
+<li><p>Can I use the loss function or learning curve to tell when my training has converged?</p>
+<ul>
+<li><p>The training curve is plotted in the Jupiter notebook. We usually use this to diagnose any training instabilities
+(spikes in the training curve). The loss function on the training set does not generally indicate convergence of
+the model.</p></li>
+</ul>
+</li>
+<li><p>Do I need to use backproject_voxel? (Step 4 in the GitHub)</p>
+<ul>
+<li><p>This step is used as a brief sanity check that the poses/CTF parameters have been parsed correctly.</p></li>
+</ul>
+</li>
+<li><p>I am seeing weird artifacts (e.g. spherical ringing) in the reconstructed volumes.</p>
+<ul>
+<li><p>This is most likely an issue with the input CTF parameters, or some type of aliasing from signal pre-processing,
+e.g. in signal-subtracted particle stacks. Please reach out if you run into these artifacts or file a github issue.</p></li>
+</ul>
+</li>
+<li><p>Does cryoDRGN work with membrane protein complexes?</p>
+<ul>
+<li><p>It does! However, we find that cryoDRGN can capture the heterogeneity of the micelle instead of the protein
+complex. You can try training on signal subtracted images.</p></li>
+</ul>
+</li>
+<li><p>Does <em>particle crowdedness</em> affect the training result?</p>
+<ul>
+<li><p><em>Particle crowdedness</em> means signals from adjacent particles are included in cryoDRGN training.
+Particle crowding does affect the results (e.g. learning heterogeneity of neighboring particles).
+If you notice that this is a concern, you can reduce the reals-space windowing that is applied, by adding
+something like <code class="docutils literal notranslate"><span class="pre">--window</span> <span class="pre">.6</span></code> when using <code class="docutils literal notranslate"><span class="pre">cryodrgn</span> <span class="pre">train_vae</span></code>.</p></li>
+</ul>
+</li>
+<li><p>Is cryoDRGN sensitive to orientation bias?</p>
+<ul>
+<li><p>As long as sufficient orientational coverage exists, cryoDRGN should give reasonable results.</p></li>
+</ul>
+</li>
+<li><p>How does one generally recognize a cluster as a junk cluster?  Are there any visible features in the UMAP that can
+be used?</p>
+<ul>
+<li><p>This requires some digging into the results and images. You might be able to tell by looking at the maps or images
+in obvious cases. Sometimes you’ll need to do follow-up analysis to validate, e.g. 2D classification.</p></li>
+</ul>
+</li>
+<li><p>Do better separated clusters more likely mean distinct conformational states?  If a UMAP shows clusters that are
+close to one another (but with clear boundaries), can one interpret it as a set of conformational states that are very
+close to one another?</p>
+<ul>
+<li><p>No, not in general. Sometimes there is “repetition” in the latent space where homogeneous states split into
+multiple clusters (maybe there is something subtle going on in the background). You may want to try out the new
+<a class="reference internal" href="landscape_analysis.html"><span class="doc std std-doc">landscape analysis tool</span></a>
+if you want to more quantitatively define conformational states.</p></li>
+</ul>
+</li>
+</ul>
+<p>More resources can be found by searching the <a class="reference external" href="https://github.com/zhonge/cryodrgn/issues">github issues</a> page.</p>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="large_datasets.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Dealing with large datasets</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Ellen Zhong<br/>
+  
+      &copy; Copyright 2022, Ellen Zhong.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
